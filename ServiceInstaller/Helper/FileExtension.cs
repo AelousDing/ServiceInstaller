@@ -11,7 +11,7 @@ namespace ServiceInstaller.Helper
         public static string GetDirectoryName(this string exePath)
         {
             int index = exePath.LastIndexOf('\\');
-            return exePath.Substring(index + 1);
+            return exePath.Substring(0, index);
 
         }
         public static string GetFileName(this string exePath)
